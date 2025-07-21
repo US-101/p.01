@@ -6,7 +6,7 @@ dog_list = ["汪太郎", "莉莉", "狗"]
 if "stage" not in st.session_state:
     st.session_state.stage = 1
 
-st.markdown("## 狗狗入會測驗 🐾")
+st.markdown("## 入會測驗 ")
 
 # 第一題
 if st.session_state.stage == 1:
@@ -35,5 +35,5 @@ elif st.session_state.stage == 3:
         st.warning("你不是真的狗吧？🐾")
 
     if st.button("重新開始"):
-        st.session_state.clear()  # 清空所有記憶
-        st.experimental_rerun()   # 🔄 重新跑整個 app
+        st.session_state.clear()
+        raise RerunException(rerun_data=None) 
