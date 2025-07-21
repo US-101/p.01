@@ -30,9 +30,9 @@ elif st.session_state.stage == 2:
 elif st.session_state.stage == 3:
     toy = st.session_state.get("toy")
     if toy == "狗男友":
-        st.success("我相信你是一隻狗 ❤️🐶")
+        st.success("我相信你是一隻狗")
     else:
-        st.warning("你不是真的狗吧？🐾")
+        st.warning("你不是真的狗吧？")
 
     if st.button("重新開始"):
         st.session_state.clear()
