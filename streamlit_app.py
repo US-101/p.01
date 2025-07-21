@@ -14,7 +14,7 @@ if submitted:
             st.success("汪汪你好")
 
             # ✅ 第二個問題：只對狗出現！
-            toy = st.radio("你最喜歡哪種玩具？", ["球球", "骨頭", "鴨鴨"])
+            toy = st.radio("你最喜歡哪種玩具？", ["球", "骨頭", "狗男友"])
             if toy:
                 st.info(f"你選擇了 {toy}，真是一隻幸福的狗狗！")
 
