@@ -36,4 +36,4 @@ elif st.session_state.stage == 3:
 
     if st.button("重新開始"):
         st.session_state.clear()
-        raise RerunException(rerun_data=None) 
+        st.rerun()  # 
