@@ -28,7 +28,7 @@ def add_furigana(japanese_text):
     return result
 
 # UI
-st.title("🌸 中文 → 日文翻譯器（附平假名）")
+st.title(" 中文 → 日文翻譯器（附平假名）")
 
 user_input = st.text_input("請輸入中文：")
 
@@ -37,7 +37,7 @@ if user_input:
     result = translator(user_input)[0]["translation_text"]
     with_furigana = add_furigana(result)
 
-    st.markdown("### 📘 翻譯結果：")
+    st.markdown("###  翻譯結果：")
     st.write(result)
-    st.markdown("### 🈁 平假名標註：")
+    st.markdown("###  平假名標註：")
     st.write(with_furigana)
