@@ -29,3 +29,8 @@ if input_text:
 
     st.write("### 平假名版本")
     st.info(furigana)
+
+from googletrans import Translator
+translator = Translator()
+result = translator.translate("你好", src='zh-CN', dest='ja')
+print(result.text)
